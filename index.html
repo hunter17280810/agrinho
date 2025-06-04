@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores do Paraná - Receitas Agropecuárias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grain-overlay"></div>
+    
+    <!-- Checkboxes ocultos para controlar modais -->
+    <input type="checkbox" id="modal-churrasco" class="modal-toggle">
+    <input type="checkbox" id="modal-leitao" class="modal-toggle">
+    <input type="checkbox" id="modal-frango" class="modal-toggle">
+    <input type="checkbox" id="modal-queijo" class="modal-toggle">
+    <input type="checkbox" id="modal-pamonha" class="modal-toggle">
+    <input type="checkbox" id="modal-mel" class="modal-toggle">
+    
+    <!-- Checkbox para menu mobile -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-icon">🌾</span>
+                    <h1>Sabores do Paraná</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#receitas" class="nav-link">Receitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sobre" class="nav-link">Nossa História</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                <label for="menu-toggle" class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="hero-pattern"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>✨ Tradição Familiar</span>
+                </div>
+                <h1 class="hero-title">
+                    Sabores Autênticos
+                    <span class="hero-highlight">do Campo Paranaense</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Descubra receitas centenárias que celebram a rica tradição agropecuária 
+                    da terra dos pinheirais, passadas de geração em geração.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#receitas" class="btn-primary">
+                        <span>Explorar Receitas</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                        </svg>
+                    </a>
+                    <a href="#sobre" class="btn-secondary">Nossa História</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="card-icon">🥘</div>
+                    <h3>50+ Receitas</h3>
+                    <p>Tradicionais</p>
+                </div>
+                <div class="floating-card floating-card-2">
+                    <div class="card-icon">👨‍🌾</div>
+                    <h3>100+ Anos</h3>
+                    <p>de Tradição</p>
+                </div>
+                <div class="floating-card floating-card-3">
+                    <div class="card-icon">🏆</div>
+                    <h3>Premiadas</h3>
+                    <p>Regionalmente</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="receitas" class="receitas-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Culinária Tradicional</span>
+                    <h2 class="section-title">Receitas que Contam Histórias</h2>
+                    <p class="section-subtitle">
+                        Cada prato é uma jornada pelos sabores únicos da agropecuária paranaense, 
+                        preparados com ingredientes frescos e técnicas ancestrais.
+                    </p>
+                </div>
+                
+                <div class="receitas-grid">
+                    <article class="receita-card featured">
+                        <div class="card-badge">Mais Popular</div>
+                        <div class="card-image">
+                            <div class="image-overlay"></div>
+                            <span class="card-emoji">🥩</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-category">Carnes</div>
+                            <h3 class="card-title">Churrasco Gaúcho Paranaense</h3>
+                            <p class="card-description">
+                                Carne bovina premium temperada com sal grosso e ervas aromáticas 
+                                cultivadas nas propriedades locais.
+                            </p>
+                            <div class="card-meta">
+                                <div class="meta-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    <span>2h 30min</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                                    </svg>
+                                    <span>Médio</span>
+                                </div>
+                            </div>
+                            <label for="modal-churrasco" class="card-button">
+                                <span>Ver Receita Completa</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19"/>
+                                </svg>
+                            </label>
+                        </div>
+                    </article>
+
+                    <article class="receita-card">
+                        <div class="card-image">
+                            <div class="image-overlay"></div>
+                            <span class="card-emoji">🐷</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-category">Suínos</div>
+                            <h3 class="card-title">Leitão à Pururuca</h3>
+                            <p class="card-description">
+                                Leitão assado com pele dourada e crocante, temperado com especiarias 
+                                secretas da família.
+                            </p>
+                            <div class="card-meta">
+                                <div class="meta-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    <span>4h</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                                    </svg>
+                                    <span>Avançado</span>
+                                </div>
+                            </div>
+                            <label for="modal-leitao" class="card-button">
+                                <span>Ver Receita</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19"/>
+                                </svg>
+                            </label>
+                        </div>
+                    </article>
+
+                    <article class="receita-card">
+                        <div class="card-image">
+                            <div class="image-overlay"></div>
+                            <span class="card-emoji">🐔</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-category">Aves</div>
+                            <h3 class="card-title">Frango Caipira com Polenta</h3>
+                            <p class="card-description">
+                                Frango criado solto acompanhado de polenta cremosa com queijo 
+                                colonial artesanal.
+                            </p>
+                            <div class="card-meta">
+                                <div class="meta-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    <span>1h 30min</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                                    </svg>
+                                    <span>Fácil</span>
+                                </div>
+                            </div>
+                            <label for="modal-frango" class="card-button">
+                                <span>Ver Receita</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19"/>
+                                </svg>
+                            </label>
+                        </div>
+                    </article>
+
+                    <article class="receita-card">
+                        <div class="card-image">
+                            <div class="image-overlay"></div>
+                            <span class="card-emoji">🥛</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-category">Laticínios</div>
+                            <h3 class="card-title">Queijo Colonial Defumado</h3>
+                            <p class="card-description">
+                                Queijo artesanal defumado com madeira de araucária, seguindo 
+                                receita centenária.
+                            </p>
+                            <div class="card-meta">
+                                <div class="meta-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    <span>24h</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                                    </svg>
+                                    <span>Médio</span>
+                                </div>
+                            </div>
+                            <label for="modal-queijo" class="card-button">
+                                <span>Ver Receita</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19"/>
+                                </svg>
+                            </label>
+                        </div>
+                    </article>
+
+                    <article class="receita-card">
+                        <div class="card-image">
+                            <div class="image-overlay"></div>
+                            <span class="card-emoji">🌽</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-category">Grãos</div>
+                            <h3 class="card-title">Pamonha de Milho Verde</h3>
+                            <p class="card-description">
+                                Pamonha doce preparada com milho verde colhido na hora, 
+                                leite fresco e açúcar mascavo.
+                            </p>
+                            <div class="card-meta">
+                                <div class="meta-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    <span>1h</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                                    </svg>
+                                    <span>Fácil</span>
+                                </div>
+                            </div>
+                            <label for="modal-pamonha" class="card-button">
+                                <span>Ver Receita</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19"/>
+                                </svg>
+                            </label>
+                        </div>
+                    </article>
+
+                    <article class="receita-card">
+                        <div class="card-image">
+                            <div class="image-overlay"></div>
+                            <span class="card-emoji">🍯</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-category">Sobremesas</div>
+                            <h3 class="card-title">Mel com Pinhão</h3>
+                            <p class="card-description">
+                                Sobremesa tradicional de inverno com mel puro de abelhas 
+                                locais e pinhão fresquinho.
+                            </p>
+                            <div class="card-meta">
+                                <div class="meta-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    <span>30min</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                                    </svg>
+                                    <span>Fácil</span>
+                                </div>
+                            </div>
+                            <label for="modal-mel" class="card-button">
+                                <span>Ver Receita</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19"/>
+                                </svg>
+                            </label>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre-section">
+            <div class="container">
+                <div class="sobre-content">
+                    <div class="sobre-text">
+                        <span class="section-badge">Nossa História</span>
+                        <h2 class="section-title">Tradição que Alimenta Gerações</h2>
+                        <p class="sobre-description">
+                            Há mais de um século, as famílias rurais do Paraná desenvolveram receitas 
+                            únicas que celebram a abundância da terra. Cada prato conta uma história 
+                            de dedicação, amor pela culinária e respeito pelos ingredientes locais.
+                        </p>
+                        <p class="sobre-description">
+                            Nosso compromisso é preservar essas tradições culinárias, compartilhando 
+                            os segredos passados de geração em geração e mantendo viva a essência 
+                            da cozinha agropecuária paranaense.
+                        </p>
+                        <div class="sobre-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">🌱</div>
+                                <div class="feature-content">
+                                    <h4>Ingredientes Locais</h4>
+                                    <p>Produtos frescos direto da propriedade</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                                <div class="feature-content">
+                                    <h4>Receitas Familiares</h4>
+                                    <p>Segredos passados entre gerações</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">🏆</div>
+                                <div class="feature-content">
+                                    <h4>Qualidade Premium</h4>
+                                    <p>Padrão de excelência reconhecido</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sobre-visual">
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">Receitas Tradicionais</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">100+</div>
+                                <div class="stat-label">Famílias Parceiras</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">200+</div>
+                                <div class="stat-label">Anos de História</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">15</div>
+                                <div class="stat-label">Prêmios Regionais</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <span class="logo-icon">🌾</span>
+                            <h3>Sabores do Paraná</h3>
+                        </div>
+                        <p class="footer-description">
+                            Preservando e compartilhando os sabores autênticos da tradição 
+                            agropecuária paranaense com o mundo.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-sections">
+                    <div class="footer-section">
+                        <h4>Receitas</h4>
+                        <ul>
+                            <li><a href="#receitas">Carnes</a></li>
+                            <li><a href="#receitas">Aves</a></li>
+                            <li><a href="#receitas">Laticínios</a></li>
+                            <li><a href="#receitas">Sobremesas</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Sobre Nós</h4>
+                        <ul>
+                            <li><a href="#sobre">Nossa História</a></li>
+                            <li><a href="#sobre">Famílias Parceiras</a></li>
+                            <li><a href="#sobre">Certificações</a></li>
+                            <li><a href="#sobre">Prêmios</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Contato</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                <span>contato@saboresparana.com.br</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                                <span>(41) 99999-9999</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Sabores do Paraná. Todos os direitos reservados.</p>
+                    <div class="footer-links">
+                        <a href="#">Política de Privacidade</a>
+                        <a href="#">Termos de Uso</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modais das Receitas -->
+    
+    <!-- Modal Churrasco -->
+    <div class="recipe-modal" id="churrasco-modal">
+        <div class="modal-overlay">
+            <label for="modal-churrasco" class="modal-close-overlay"></label>
+        </div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <label for="modal-churrasco" class="modal-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </label>
+            </div>
+            
+            <div class="modal-content">
+                <div class="recipe-header">
+                    <div class="recipe-emoji">🥩</div>
+                    <div class="recipe-info">
+                        <span class="recipe-category">Carnes</span>
+                        <h1 class="recipe-title">Churrasco Gaúcho Paranaense</h1>
+                        <div class="recipe-meta">
+                            <div class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                                <span>2h 30min</span>
+                            </div>
+                            <div class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                                </svg>
+                                <span>Médio</span>
+                            </div>
+                            <div class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                                <span>8-10 pessoas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-content">
+                    <div class="ingredients-section">
+                        <h2 class="section-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 3h18v18H3zM9 9h6v6H9z"/>
+                            </svg>
+                            Ingredientes
+                        </h2>
+                        <ul class="ingredients-list">
+                            <li class="ingredient-item">2kg de picanha em peça</li>
+                            <li class="ingredient-item">1kg de costela bovina</li>
+                            <li class="ingredient-item">500g de linguiça colonial</li>
+                            <li class="ingredient-item">500g de sal grosso</li>
+                            <li class="ingredient-item">2 colheres de sopa de alho picado</li>
+                            <li class="ingredient-item">1 colher de sopa de pimenta-do-reino</li>
+                            <li class="ingredient-item">2 colheres de sopa de ervas finas</li>
+                            <li class="ingredient-item">1 maço de salsinha picada</li>
+                            <li class="ingredient-item">Carvão vegetal de qualidade</li>
+                        </ul>
+                    </div>
+
+                    <div class="preparation-section">
+                        <h2 class="section-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            Modo de Preparo
+                        </h2>
+                        <ol class="preparation-list">
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Retire a carne da geladeira 1 hora antes do preparo para que atinja temperatura ambiente.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Acenda o carvão e aguarde formar brasas uniformes, sem chamas.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Tempere a picanha apenas com sal grosso, esfregando bem por toda a superfície.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Misture o alho, pimenta-do-reino e ervas finas para temperar a costela.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Coloque a costela na grelha primeiro, pois demora mais para assar.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Após 45 minutos, adicione a picanha, mantendo altura de 20cm das brasas.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Vire as carnes a cada 15-20 minutos para assar uniformemente.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">A linguiça deve ser colocada nos últimos 30 minutos.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Teste o ponto da carne com garfo - deve estar macia mas firme.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Deixe a carne descansar por 10 minutos antes de fatiar.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Sirva imediatamente acompanhado de farofa e vinagrete.</span>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="tips-section">
+                        <h2 class="section-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                <line x1="12" y1="17" x2="12.01" y2="17"/>
+                            </svg>
+                            Dicas Especiais
+                        </h2>
+                        <ul class="tips-list">
+                            <li class="tip-item">💡 Use sempre carvão de boa qualidade, preferencialmente de eucalipto</li>
+                            <li class="tip-item">💡 Mantenha uma altura constante entre a carne e as brasas</li>
+                            <li class="tip-item">💡 Nunca fure a carne desnecessariamente para não perder os sucos</li>
+                            <li class="tip-item">💡 O sal grosso deve ser aplicado generosamente na picanha</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Leitão -->
+    <div class="recipe-modal" id="leitao-modal">
+        <div class="modal-overlay">
+            <label for="modal-leitao" class="modal-close-overlay"></label>
+        </div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <label for="modal-leitao" class="modal-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </label>
+            </div>
+            
+            <div class="modal-content">
+                <div class="recipe-header">
+                    <div class="recipe-emoji">🐷</div>
+                    <div class="recipe-info">
+                        <span class="recipe-category">Suínos</span>
+                        <h1 class="recipe-title">Leitão à Pururuca</h1>
+                        <div class="recipe-meta">
+                            <div class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                                <span>4h</span>
+                            </div>
+                            <div class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                                </svg>
+                                <span>Avançado</span>
+                            </div>
+                            <div class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                                <span>12-15 pessoas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-content">
+                    <div class="ingredients-section">
+                        <h2 class="section-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 3h18v18H3zM9 9h6v6H9z"/>
+                            </svg>
+                            Ingredientes
+                        </h2>
+                        <ul class="ingredients-list">
+                            <li class="ingredient-item">1 leitão de 8-10kg limpo</li>
+                            <li class="ingredient-item">200g de sal grosso</li>
+                            <li class="ingredient-item">100g de alho descascado</li>
+                            <li class="ingredient-item">50ml de azeite extravirgem</li>
+                            <li class="ingredient-item">2 colheres de sopa de páprica doce</li>
+                            <li class="ingredient-item">1 colher de sopa de cominho</li>
+                            <li class="ingredient-item">2 folhas de louro</li>
+                            <li class="ingredient-item">1 maço de alecrim fresco</li>
+                            <li class="ingredient-item">2 cebolas grandes cortadas em fatias</li>
+                            <li class="ingredient-item">500ml de vinho branco seco</li>
+                            <li class="ingredient-item">Pimenta-do-reino a gosto</li>
+                        </ul>
+                    </div>
+
+                    <div class="preparation-section">
+                        <h2 class="section-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            Modo de Preparo
+                        </h2>
+                        <ol class="preparation-list">
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Limpe bem o leitão, removendo pelos e lavando com água corrente.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Faça cortes superficiais na pele em formato de losango.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Prepare uma pasta com alho, sal, azeite, páprica e cominho.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Esfregue a pasta por toda a carne, inclusive na cavidade interna.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Coloque as cebolas, louro e alecrim dentro da cavidade.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Amarre o leitão com barbante para manter o formato.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Pré-aqueça o forno a 180°C.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Coloque o leitão em assadeira grande com o vinho branco.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Asse por 3 horas, regando com o próprio caldo a cada 30 minutos.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Aumente a temperatura para 220°C nos últimos 30 minutos.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">A pele deve ficar dourada e crocante (pururuca).</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Deixe descansar 15 minutos antes de trinchar.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Sirva com farofa de banana e couve refogada.</span>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="tips-section">
+                        <h2 class="section-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                <line x1="12" y1="17" x2="12.01" y2="17"/>
+                            </svg>
+                            Dicas Especiais
+                        </h2>
+                        <ul class="tips-list">
+                            <li class="tip-item">💡 O segredo da pururuca está nos cortes na pele e alta temperatura final</li>
+                            <li class="tip-item">💡 Regue constantemente para não ressecar a carne</li>
+                            <li class="tip-item">💡 Use termômetro - temperatura interna deve atingir 75°C</li>
+                            <li class="tip-item">💡 Se a pele não dourar, use grill nos últimos minutos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Frango -->
+    <div class="recipe-modal" id="frango-modal">
+        <div class="modal-overlay">
+            <label for="modal-frango" class="modal-close-overlay"></label>
+        </div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <label for="modal-frango" class="modal-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </label>
+            </div>
+            
+            <div class="modal-content">
+                <div class="recipe-header">
+                    <div class="recipe-emoji">🐔</div>
+                    <div class="recipe-info">
+                        <span class="recipe-category">Aves</span>
+                        <h1 class="recipe-title">Frango Caipira com Polenta</h1>
+                        <div class="recipe-meta">
+                            <div class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                                <span>1h 30min</span>
+                            </div>
+                            <div class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                                </svg>
+                                <span>Fácil</span>
+                            </div>
+                            <div class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                                <span>6 pessoas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-content">
+                    <div class="ingredients-section">
+                        <h2 class="section-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 3h18v18H3zM9 9h6v6H9z"/>
+                            </svg>
+                            Ingredientes
+                        </h2>
+                        <ul class="ingredients-list">
+                            <li class="ingredient-item">1 frango caipira de 2kg cortado em pedaços</li>
+                            <li class="ingredient-item">2 xícaras de fubá para polenta</li>
+                            <li class="ingredient-item">1 litro de caldo de galinha</li>
+                            <li class="ingredient-item">200g de queijo colonial ralado</li>
+                            <li class="ingredient-item">4 dentes de alho picados</li>
+                            <li class="ingredient-item">2 cebolas médias picadas</li>
+                            <li class="ingredient-item">3 tomates maduros picados</li>
+                            <li class="ingredient-item">1 pimentão vermelho em tiras</li>
+                            <li class="ingredient-item">100ml de azeite</li>
+                            <li class="ingredient-item">1 xícara de vinho branco</li>
+                            <li class="ingredient-item">Sal, pimenta e cheiro-verde a gosto</li>
+                        </ul>
+                    </div>
+
+                    <div class="preparation-section">
+                        <h2 class="section-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            Modo de Preparo
+                        </h2>
+                        <ol class="preparation-list">
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Tempere os pedaços de frango com sal, pimenta e alho.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Deixe marinar por 30 minutos.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Aqueça o azeite em panela grande e doure o frango.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Retire o frango e refogue a cebola até dourar.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Adicione o tomate e pimentão, cozinhe por 5 minutos.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Retorne o frango à panela e adicione o vinho.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Tampe e cozinhe em fogo baixo por 40 minutos.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Para a polenta: ferva o caldo de galinha.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Adicione o fubá aos poucos, mexendo sempre.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Cozinhe por 20 minutos mexendo constantemente.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Adicione o queijo e misture bem.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Ajuste o tempero do frango com sal e pimenta.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Sirva o frango sobre a polenta cremosa.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Finalize com cheiro-verde picado.</span>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="tips-section">
+                        <h2 class="section-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                <line x1="12" y1="17" x2="12.01" y2="17"/>
+                            </svg>
+                            Dicas Especiais
+                        </h2>
+                        <ul class="tips-list">
+                            <li class="tip-item">💡 Frango caipira tem sabor mais intenso que o comum</li>
+                            <li class="tip-item">💡 Mexa a polenta sempre na mesma direção para não embolar</li>
+                            <li class="tip-item">💡 Se a polenta engrossar muito, adicione mais caldo quente</li>
+                            <li class="tip-item">💡 O queijo colonial pode ser substituído por parmesão</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Queijo -->
+    <div class="recipe-modal" id="queijo-modal">
+        <div class="modal-overlay">
+            <label for="modal-queijo" class="modal-close-overlay"></label>
+        </div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <label for="modal-queijo" class="modal-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </label>
+            </div>
+            
+            <div class="modal-content">
+                <div class="recipe-header">
+                    <div class="recipe-emoji">🥛</div>
+                    <div class="recipe-info">
+                        <span class="recipe-category">Laticínios</span>
+                        <h1 class="recipe-title">Queijo Colonial Defumado</h1>
+                        <div class="recipe-meta">
+                            <div class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                                <span>24h</span>
+                            </div>
+                            <div class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                                </svg>
+                                <span>Médio</span>
+                            </div>
+                            <div class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                                <span>1 queijo de 500g</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-content">
+                    <div class="ingredients-section">
+                        <h2 class="section-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 3h18v18H3zM9 9h6v6H9z"/>
+                            </svg>
+                            Ingredientes
+                        </h2>
+                        <ul class="ingredients-list">
+                            <li class="ingredient-item">4 litros de leite integral fresco</li>
+                            <li class="ingredient-item">1/4 de xícara de vinagre branco</li>
+                            <li class="ingredient-item">1 colher de chá de sal</li>
+                            <li class="ingredient-item">2 colheres de sopa de ervas finas</li>
+                            <li class="ingredient-item">Madeira de araucária para defumar</li>
+                            <li class="ingredient-item">Gaze ou pano limpo</li>
+                            <li class="ingredient-item">Forma para queijo ou escorredor</li>
+                        </ul>
+                    </div>
+
+                    <div class="preparation-section">
+                        <h2 class="section-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            Modo de Preparo
+                        </h2>
+                        <ol class="preparation-list">
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Aqueça o leite até 85°C, mexendo sempre.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Adicione o vinagre aos poucos até formar coalho.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Deixe descansar por 30 minutos até separar o soro.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Coe em gaze, separando o coalho do soro.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Adicione sal e ervas ao coalho, misture bem.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Coloque na forma e pressione para retirar excesso de soro.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Deixe prensado por 12 horas na geladeira.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Retire da forma e prepare o defumador.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Acenda a madeira de araucária até fazer fumaça.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Defume o queijo por 2-3 horas em temperatura baixa.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Vire o queijo na metade do tempo.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Embrulhe em papel manteiga e deixe curar por 24h.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Corte em fatias e sirva com pão colonial.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Conserve na geladeira por até 1 semana.</span>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="tips-section">
+                        <h2 class="section-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                <line x1="12" y1="17" x2="12.01" y2="17"/>
+                            </svg>
+                            Dicas Especiais
+                        </h2>
+                        <ul class="tips-list">
+                            <li class="tip-item">💡 Use sempre leite fresco de boa qualidade</li>
+                            <li class="tip-item">💡 A temperatura da defumação não deve passar de 30°C</li>
+                            <li class="tip-item">💡 Madeira de araucária dá sabor característico do Paraná</li>
+                            <li class="tip-item">💡 Quanto mais tempo defumar, mais intenso o sabor</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Pamonha -->
+    <div class="recipe-modal" id="pamonha-modal">
+        <div class="modal-overlay">
+            <label for="modal-pamonha" class="modal-close-overlay"></label>
+        </div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <label for="modal-pamonha" class="modal-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </label>
+            </div>
+            
+            <div class="modal-content">
+                <div class="recipe-header">
+                    <div class="recipe-emoji">🌽</div>
+                    <div class="recipe-info">
+                        <span class="recipe-category">Grãos</span>
+                        <h1 class="recipe-title">Pamonha de Milho Verde</h1>
+                        <div class="recipe-meta">
+                            <div class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                                <span>1h</span>
+                            </div>
+                            <div class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                                </svg>
+                                <span>Fácil</span>
+                            </div>
+                            <div class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                                <span>12 pamonhas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-content">
+                    <div class="ingredients-section">
+                        <h2 class="section-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 3h18v18H3zM9 9h6v6H9z"/>
+                            </svg>
+                            Ingredientes
+                        </h2>
+                        <ul class="ingredients-list">
+                            <li class="ingredient-item">12 espigas de milho verde</li>
+                            <li class="ingredient-item">1 xícara de leite integral</li>
+                            <li class="ingredient-item">1/2 xícara de açúcar mascavo</li>
+                            <li class="ingredient-item">1 pitada de sal</li>
+                            <li class="ingredient-item">2 colheres de sopa de manteiga</li>
+                            <li class="ingredient-item">1 colher de chá de erva-doce</li>
+                            <li class="ingredient-item">Palha do próprio milho</li>
+                        </ul>
+                    </div>
+
+                    <div class="preparation-section">
+                        <h2 class="section-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            Modo de Preparo
+                        </h2>
+                        <ol class="preparation-list">
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Retire as palhas do milho com cuidado para usar como embalagem.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Rale o milho ou bata no liquidificador com pouco leite.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Passe a massa por peneira para retirar bagaços.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Misture o açúcar, sal, manteiga e erva-doce.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Cozinhe a mistura em fogo baixo por 10 minutos, mexendo sempre.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">A massa deve ficar cremosa mas consistente.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Deixe esfriar um pouco para manusear.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Coloque 2 colheres da massa em cada palha.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Amarre as pontas com tiras da própria palha.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Cozinhe em água fervente por 40 minutos.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">As pamonhas estão prontas quando a palha solta facilmente.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Sirva quente ou fria, doce ou salgada.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Pode ser acompanhada de queijo fresco.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Conserva por 3 dias na geladeira.</span>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="tips-section">
+                        <h2 class="section-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                <line x1="12" y1="17" x2="12.01" y2="17"/>
+                            </svg>
+                            Dicas Especiais
+                        </h2>
+                        <ul class="tips-list">
+                            <li class="tip-item">💡 Escolha milho bem verde e doce para melhor sabor</li>
+                            <li class="tip-item">💡 Não deixe a massa muito líquida ou muito seca</li>
+                            <li class="tip-item">💡 Amarre bem para não abrir durante o cozimento</li>
+                            <li class="tip-item">💡 Pode fazer versão salgada omitindo açúcar e adicionando queijo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Mel -->
+    <div class="recipe-modal" id="mel-modal">
+        <div class="modal-overlay">
+            <label for="modal-mel" class="modal-close-overlay"></label>
+        </div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <label for="modal-mel" class="modal-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </label>
+            </div>
+            
+            <div class="modal-content">
+                <div class="recipe-header">
+                    <div class="recipe-emoji">🍯</div>
+                    <div class="recipe-info">
+                        <span class="recipe-category">Sobremesas</span>
+                        <h1 class="recipe-title">Mel com Pinhão</h1>
+                        <div class="recipe-meta">
+                            <div class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                                <span>30min</span>
+                            </div>
+                            <div class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                                </svg>
+                                <span>Fácil</span>
+                            </div>
+                            <div class="meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                                <span>4 pessoas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-content">
+                    <div class="ingredients-section">
+                        <h2 class="section-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 3h18v18H3zM9 9h6v6H9z"/>
+                            </svg>
+                            Ingredientes
+                        </h2>
+                        <ul class="ingredients-list">
+                            <li class="ingredient-item">2 xícaras de pinhão descascado</li>
+                            <li class="ingredient-item">1/2 xícara de mel puro</li>
+                            <li class="ingredient-item">1 colher de sopa de manteiga</li>
+                            <li class="ingredient-item">1 pitada de canela em pó</li>
+                            <li class="ingredient-item">1 colher de chá de essência de baunilha</li>
+                            <li class="ingredient-item">Castanhas picadas para decorar (opcional)</li>
+                        </ul>
+                    </div>
+
+                    <div class="preparation-section">
+                        <h2 class="section-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            Modo de Preparo
+                        </h2>
+                        <ol class="preparation-list">
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Cozinhe o pinhão em água com sal por 20 minutos.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Escorra e retire a película marrom dos pinhões.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Aqueça uma frigideira com a manteiga.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Adicione o pinhão e doure levemente.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Acrescente o mel e misture delicadamente.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Adicione a canela e baunilha.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Cozinhe por 5 minutos em fogo baixo.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">O mel deve caramelizar levemente.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Retire do fogo quando estiver dourado.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Sirva quente em taças individuais.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Decore com castanhas picadas se desejar.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Pode acompanhar sorvete de creme.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Também fica delicioso frio.</span>
+                            </li>
+                            <li class="step-item">
+                                <span class="step-number"></span>
+                                <span class="step-text">Conserva por 2 dias na geladeira.</span>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="tips-section">
+                        <h2 class="section-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                <line x1="12" y1="17" x2="12.01" y2="17"/>
+                            </svg>
+                            Dicas Especiais
+                        </h2>
+                        <ul class="tips-list">
+                            <li class="tip-item">💡 Pinhão fresco tem sabor mais suave e doce</li>
+                            <li class="tip-item">💡 Não deixe o mel queimar para não ficar amargo</li>
+                            <li class="tip-item">💡 Pode substituir mel por açúcar mascavo</li>
+                            <li class="tip-item">💡 Fica delicioso com uma pitada de sal marinho</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
