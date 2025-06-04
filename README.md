@@ -42,7 +42,7 @@ sabores-do-parana/
 1. Clone o repositório:
 
 ```shellscript
-git clone https://github.com/seu-usuario/sabores-do-parana.git
+git clone https://github.com/hunter17280810/agrinho.git
 ```
 
 
